@@ -60,13 +60,4 @@ package ru.kusliyva.calculator;
 
         }
 
-
-        public static void main (String args[]){
-            final Calculator calculator = new Calculator();
-            calculator.division(Double.valueOf(args[0]), Double.valueOf(args[1]));
-            System.out.println(calculator.result);
-
-
-        }
-
     }
