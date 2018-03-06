@@ -35,8 +35,29 @@ package ru.kusliyva.calculator;
             for (int i = 1; i != second; i++){
                 result *= first;
             }
-
             this.result = result;
+        }
+
+        public void calculate(String operation, double first, double second){
+            if("+".equals(operation)){
+                this.addition(first, second);
+            }
+            else if("-".equals(operation)){
+                this.subtraction(first, second);
+            }
+            else if("*".equals(operation)){
+                this.multiplication(first, second);
+            }
+            else if("/".equals(operation)){
+                this.division(first, second);
+            }
+            else if("^".equals(operation)){
+                this.exponentiation(first, second);
+            }
+            else{
+                throw new UnsupportedOperationException();
+            }
+
         }
 
 
